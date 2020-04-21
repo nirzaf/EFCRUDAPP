@@ -57,7 +57,7 @@ namespace EFCRUDAPP
             dgvCustomer.AutoGenerateColumns = false;
             using (DBEntities db = new DBEntities())
             {
-                dgvCustomer.DataSource = db.Customers.ToList<Customer>();
+                dgvCustomer.DataSource = db.Customers.ToList();
                 
             }
         }
